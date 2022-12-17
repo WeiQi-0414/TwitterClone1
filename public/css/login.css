@@ -18,6 +18,10 @@ body{
     -webkit-box-shadow: 1px 15px 10px rgba(0,0,0,0.3);
     -moz-box-shadow: 1px 15px 10px rgba(0,0,0,0.3);
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 input[type="text"],
 input[type="email"],
 input[type="password"]{
@@ -33,5 +37,4 @@ input[type="submit"]{
     border:none;
     border-radius:15px;
     margin-bottom:10px;
-
 }

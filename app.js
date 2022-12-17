@@ -15,6 +15,9 @@ app.use(express.static(path.join(__dirname, "public")));
 const loginRoute = require("./routes/loginRoutes");
 app.use("/login", loginRoute);
 
+const registerRoute = require("./routes/registerRoutes");
+app.use("/register", registerRoute);
+
 app.get("/", middleware.requireLogin, (req, res, next)=>{
     var payload = {
         pageTitle:"Home"
