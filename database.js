@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
-
 class Database{
     constructor(){
         this.connect();
     }
-
     connect(){
         mongoose.connect("mongodb+srv://admin:123qwe@twitterclonecluster.dkb6aqz.mongodb.net/?retryWrites=true&w=majority")
         .then(()=> {
@@ -16,5 +14,4 @@ class Database{
 
     }
 }
-
 module.exports = new Database();
