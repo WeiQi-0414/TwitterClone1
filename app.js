@@ -17,6 +17,10 @@ app.use(session({
     resave: true,
     saveUninitialized:false
 }))
+// Api routes
+const postsApiRoute = require('./routes/api/posts');
+app.use("/api/posts", postsApiRoute);
+
 // Routes
 const loginRoute = require("./routes/loginRoutes");
 const registerRoute = require("./routes/registerRoutes");
